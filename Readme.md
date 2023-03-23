@@ -18,6 +18,15 @@ JWT_MAX_AGE=3600
 JWT_LEEWAY=0
 ```
 
+# Sample
+
+```
+(new JWT)->encode(payload: [], header: []);
+(new JWT)->decode(token: '', verify: true);
+(new JWT)->refresh(token: '');
+(new JWT)->expire(token: '');
+```
+
 > [adhocore/jwt documention](https://github.com/adhocore/php-jwt/blob/main/README.)
 
 | Powered By ![Koorosh safe Ashrafi](https://lh3.googleusercontent.com/a-/AOh14GgUXztH1o50UQLNASmrnjOyH76BgsLQKcdFqIWM8w=s96-c) |
